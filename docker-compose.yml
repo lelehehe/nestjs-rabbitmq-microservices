@@ -5,8 +5,9 @@ services:
       dockerfile: ./apps/orders/Dockerfile
       target: development
     # dev mode
-    # command: npm run start:debug orders
+    # command: npm run start:dev orders
     # debug mode
+    # command: npm run start:debug orders
     command: npm run start:debug orders
     env_file:
       - ./apps/orders/.env
